@@ -4,7 +4,7 @@ students = ["sophia", "John", "Bob", "Lucy"]
 
 
 def checker():
-     accept = input("Are you a student?\n(yes/no): ")
+    accept = input("Are you a student?\n(yes/no): ")
 
     if accept == "yes" or accept.startswith("y"):
         name = input("What's your name?")
