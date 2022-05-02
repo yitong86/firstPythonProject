@@ -4,20 +4,21 @@ students = ["sophia", "John", "Bob", "Lucy"]
 
 
 def checker():
-    accept = input("Are you a student?\n(yes/no): ")
+     accept = input("Are you a student?\n(yes/no): ")
 
     if accept == "yes" or accept.startswith("y"):
         name = input("What's your name?")
         for stud_name in students:
-         if name.casefold().replace(" ","") == stud_name.casefold():
+            if name.casefold().replace(" ", "") == stud_name.casefold():
                 print("Welcome to class")
                 break
         else:
-         print("You’re not supposed to be here")
+            print("You’re not supposed to be here")
     elif accept == "no" or accept.startswith("n"):
         exit()
     else:
-        accept = input("Are you a student?\n(yes/no): ")
         checker()
+
+
 checker()
 exit()
