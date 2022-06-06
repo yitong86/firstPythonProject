@@ -18,6 +18,7 @@ def checker():
     accept = input("Do you work for " + COMPANY_NAME + "?\n(yes/no): ")
     if accept == "yes" or accept.startswith("y"):
         name = input("What is your name?\nName: ")
+
         for emp_name in EMPLOYEES:
             # python string remove whitespacepython,Ignore capitalization of characters in the user’s input
             if name.casefold().replace(" ", "") == emp_name.casefold():
